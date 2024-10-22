@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 
 <body>
   <div class="container mt-3">
-    <h2>Login Form </h2><br>
+    <h2>Login Form :)</h2><br>
 
     <form method="post">
       <div class="mb-3">
