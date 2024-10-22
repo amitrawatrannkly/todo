@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,13 @@
         <div class="container-fluid">
             <ul class="navbar-nav" style="width: 100%;">
             <li class="nav-item">
-                    <a class="nav-link active" href="./Nab.php">Home</a>
+            <?php if(isset($_SESSION['id'])){?>
+                <a class="nav-link active" href="./dashboard.php">Home</a>
+            <?php } else { ?>
+                <a class="nav-link active" href="./Nab.php">Home</a>
+            <?php } ?>
+
+
                 </li>
             <?php if (!isset($_SESSION['id'])) { ?>
                 <li class="nav-item">

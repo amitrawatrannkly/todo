@@ -1,7 +1,7 @@
 <?php
-session_start();
-$id = $_SESSION['id'];
+//session_start();
 include("./Nab.php");
+$id = $_SESSION['id'];
 include("./sesion.php");
 include("Action/config.php");
 $query = $conn->prepare("select * from todos where userid='$id'");

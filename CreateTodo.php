@@ -1,8 +1,8 @@
 <?php
-session_start();
+//session_start();
+include("./Nab.php");
 $id = $_SESSION['id'];
 date_default_timezone_set('Asia/Kolkata');
-include("./Nab.php");
 include("Action/config.php");
 if (isset($_POST['submit'])) {
   $tittle = $_POST['tittle'];

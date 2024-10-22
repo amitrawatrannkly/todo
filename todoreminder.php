@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 include("Mail.php");
 $id = $_SESSION['id'];
 include("./Nab.php");
